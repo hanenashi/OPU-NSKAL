@@ -1,20 +1,22 @@
 # OPU NSKAL
- Upload files and fetch gallery links from OPU
+ Nahrávací addon/extension/plugin/rozšíření NSKAL.
  
- Nahravaci addon/extension/plugin/rozsireni pro Chrome, NSKAL.
- 
-(testovano na nejnovejsim pro Win 11) a Kiwi (nejnovejsi pro aktualni android na Pixel 8).
+Psáno pro Chrome (testováno na nejnovějším pro Win 11) a Kiwi (nejnovější pro aktuální android na Pixel 8).
   
-Cilem je vytvorit nahravadlo, ktere umozni vybrat, nahrat a nasledne na okouna nasdilet vicero souboru najednou. 
+Cílem je vytvořit nahrávadlo, které umožní vybrat, nahrát na OPU a následně na okouna nasdílet více souborů najednou. Testováno na JPEGech.
 
-Nemam vubec zadne koderske vzdelani/praxi, vsechno napsal ChatGPT v neplacene verzi za asi dva vecery, kdy jsem mu rikal, co chci a lozil ruzne v konzoli na OPU webu a tak. Tudiz to dost mozna je cele straslivej slepenec plnej der a tak, nevim, ale funguje to.
+Nemám vůbec žádné kóderské vzdělání/praxi, všechno napsal ChatGPT v neplacené verzi za asi dva večery, kdy jsem mu říkal, co chci a lozil různě v konzoli na OPU webu a tak. Tudíž to dost možná je celé strašlivý slepenec plný děr a tak, nevím, ale funguje to.
 
-Pro fungovani si musi NSKAL sosnout cookie, kterou OPU podsune uzivateli pri prihlaseni. Tudiz se nejdriv prihlasit na OPU anebo byt prihlaseny. Sosani se provadi v Options NSKALu klikem na tlacitko Fetch Cookie, nasledne ulozit Save Settings. Options zavrit. Bez sosnute cookie je uploadovaci cudlik cervenej a uzivatele vykopne do Options.
+Pro fungování si musí NSKAL sosnout cookie, kterou OPU podsune uživateli při přihlášení. Tudíž se nejdřív přihlásit na OPU anebo být už přihlášený. Sosání se provádí v Options NSKALu klikem na tlačítko Fetch Cookie, následně uložit Save Settings. Options zavřít. Bez sosnuté cookie je uploadovací čudlík červený a uživatele vykopne do Options.
 
-V hlavnim okne NSKALu vybrat jeden ci vice souboru, volitelne prepsat <br> tag, kterej se nakonec vlozi mezi jednotlive <img src>, volitelne zakliknout Resize Image a napsat procento zmenseni a Upload Files.
+V hlavním okně NSKALu 
+- vybrat jeden či více souborů
+- volitelně přepsat <br> tag na něco jinýho, ten se nakonec vloží mezi jednotlivé <img src>
+- volitelně zakliknout Resize Image a napsat procento zmenšení
+- Upload Files
 
-Po nahrani se otevre nove okno s nahledama obrazku a editovatelny textovy pole se seznamem <img src> vsech obrazku s volitelnym tagem mezi nima a cudlikem Copy, kterej zkopiruje obsah pole do schranky.
+Po nahrání se otevře nové okno s náhledama obrázků a editovatelné textové pole se seznamem <img src> všech obrázků s volitelným tagem mezi nima a čudlíkem Copy, který zkopíruje obsah pole do schránky.
 
-A to je cele to je.
+Obrázky z OPU galerie si vybírá primitivně tak, že při uploadu n souborů si sosne hornich n souborů, asi to bude omezené limitem obrázků v galerii na stránce OPU. A nahrávání něčeho jiného než JPEGu může spustit různí efektové.
 
-Zkousel jsem to predelat do Fire Foxe, ale bezvysledne.
+A to je celé to je.
