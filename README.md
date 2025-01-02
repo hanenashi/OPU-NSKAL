@@ -11,11 +11,11 @@ Pro fungování si musí NSKAL sosnout cookie, kterou OPU podsune uživateli př
 
 V hlavním okně NSKALu 
 - vybrat jeden či více souborů
-- volitelně přepsat <br> tag na něco jinýho, ten se nakonec vloží mezi jednotlivé <img src>
+- volitelně přepsat '<br>' tag na něco jinýho, ten se nakonec vloží mezi jednotlivé '<img src>'
 - volitelně zakliknout Resize Image a napsat procento zmenšení
 - Upload Files
 
-Po nahrání se otevře nové okno s náhledama obrázků a editovatelné textové pole se seznamem <img src> všech obrázků s volitelným tagem mezi nima a čudlíkem Copy, který zkopíruje obsah pole do schránky.
+Po nahrání se otevře nové okno s náhledama obrázků a editovatelné textové pole se seznamem '<img src>' všech obrázků s volitelným tagem mezi nima a čudlíkem Copy, který zkopíruje obsah pole do schránky.
 
 Obrázky z OPU galerie si vybírá primitivně tak, že při uploadu n souborů si sosne hornich n souborů, asi to bude omezené limitem obrázků v galerii na stránce OPU. A nahrávání něčeho jiného než JPEGu může spustit různí efektové.
 
