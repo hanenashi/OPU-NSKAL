@@ -8,12 +8,12 @@ Cílem je vytvořit nahrávadlo, které umožní vybrat, nahrát na OPU a násle
 Nemám vůbec žádné kóderské vzdělání/praxi, všechno napsal ChatGPT v neplacené verzi za asi dva večery, kdy jsem mu říkal, co chci a lozil různě v konzoli na OPU webu a tak. Tudíž to dost možná je celé strašlivý slepenec plný děr a tak, nevím, ale funguje to.
 
 Pro fungování si musí NSKAL sosnout cookie, kterou OPU podsune uživateli při přihlášení. Tudíž se nejdřív přihlásit na OPU anebo být už přihlášený. Sosání se provádí v Options NSKALu klikem na tlačítko Fetch Cookie, následně uložit Save Settings. Cookie se nechá napsat i ručně.
-<img src="https://opu.peklo.biz/p/25/01/02/1735796070-54418.jpg" border="1" width=400 alt="_"/>
+<img style='border:1px solid #000000' src="https://opu.peklo.biz/p/25/01/02/1735796070-54418.jpg" width=400 alt="_"/>
  Options zavřít. Bez sosnuté cookie je uploadovací čudlík červený a uživatele vykopne do Options.
-<img src="https://opu.peklo.biz/p/25/01/02/1735795915-9d891.jpg" border="1" width=400 alt="_"/>
+<img style='border:1px solid #000000' src="https://opu.peklo.biz/p/25/01/02/1735795915-9d891.jpg" width=400 alt="_"/>
 
 V hlavním okně NSKALu
-<img src="https://opu.peklo.biz/p/25/01/02/1735795734-b7b94.jpg" border="1" width=400 alt="_"/> 
+<img style='border:1px solid #000000' src="https://opu.peklo.biz/p/25/01/02/1735795734-b7b94.jpg" width=400 alt="_"/> 
 - vybrat jeden či více souborů
 - volitelně přepsat `<br>` tag na něco jinýho, ten se nakonec vloží mezi jednotlivé `<img src>`
 - volitelně zakliknout Resize Image a napsat procento zmenšení
