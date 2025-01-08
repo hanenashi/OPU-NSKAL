@@ -1,7 +1,7 @@
 # OPU NSKAL
 Nahrávací addon/extension/plugin/rozšíření NSKAL.
   
-Psáno pro Chrome na PC (testováno na nejnovějším pro Win 11) a Kiwi na Androidu (testováno na nejnovějším pro aktuální android na Pixelu 8).
+Psáno pro Chrome na PC (testováno na nejnovějším pro Win 11), Kiwi na Androidu (testováno na nejnovějším pro aktuální android na Pixelu 8) a Firefox na PC (testováno na nejnovějším pro Win 11).
   
 Cílem je vytvořit nahrávadlo, které umožní vybrat, nahrát na OPU a následně na okouna nasdílet více souborů najednou. Testováno na JPEGech.
 
@@ -9,7 +9,9 @@ Nemám vůbec žádné kóderské vzdělání/praxi, všechno napsal ChatGPT v n
 
 # INSTALACE
 
-<a href="https://www.dropbox.com/scl/fi/7fqs2as9wxqqisqhukgqt/OPU_NSKAL_Chrome_v1.0.zip?rlkey=duk478cnq9l7i6vr2u2aavpnh&st=dgqbshw0&raw=1">Stáhněte si tenhle .zip</a>
+Pro Crome a Kiwi si <a href="https://www.dropbox.com/scl/fi/7fqs2as9wxqqisqhukgqt/OPU_NSKAL_Chrome_v1.0.zip?rlkey=duk478cnq9l7i6vr2u2aavpnh&st=dgqbshw0&raw=1">stáhněte tenhle .zip</a>
+<p>
+Pro Firefox si <a href="https://www.dropbox.com/scl/fi/i5wvvacika5jc7ppdvu10/OPU_NSKAL_Firefox_1.0.xpi?rlkey=w9m7vhd97g91b7gtpl483zwdo&st=nd4tvpa7&raw=1">stáhněte tenhle .xpi</a>
 
 ## PRO CHROME
 
@@ -27,6 +29,17 @@ V Details si NSKALa připňete na lištu.
 V Extensions povolte Developer mode, klikněte na +(from .zip/.crx/.user.js) a vyberte stáhnutej zip.
 <br>
 <a href="https://opu.peklo.biz/p/25/01/04/1736010763-1719c.png"><img src="https://opu.peklo.biz/p/25/01/04/thumbs/1736010763-1719c.png"></a><p>
+
+## PRO FIREFOX
+
+V Addons/Extensions nahrajte .xpi soubor klikem na Install Add-on From File, odsouhlaste
+<img src="https://opu.peklo.biz/p/25/01/08/1736361568-a90fd.png" width=800>
+
+<p>
+a připněte si ho do lišty.<br>
+<img src="https://opu.peklo.biz/p/25/01/08/1736361569-8a212.png" width=400 alt="_"/>
+
+<p>
 
 ## JAK TO FUNGUJE
 
