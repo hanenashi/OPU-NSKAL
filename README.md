@@ -43,7 +43,7 @@ a připněte si ho do lišty.<br>
 
 ## JAK TO FUNGUJE
 
-Pro hlavní okno NSKALu si ve Chrome klikněte na ikonku NSKALa v liště, v Kiwi je pod třemi tečkami vpravo nahoře... dole.
+Pro hlavní okno NSKALu si ve Chrome a Firefoxu klikněte na ikonku NSKALa v liště, v Kiwi je pod třemi tečkami vpravo nahoře... dole.
 
 Pro fungování si musí NSKAL sosnout cookie, kterou OPU podsune uživateli při přihlášení. Tudíž se nejdřív přihlásit na OPU anebo být už přihlášený. Sosání se provádí v Options NSKALu klikem na tlačítko Fetch Cookie, následně uložit Save Settings. Cookie se nechá napsat i ručně.<p>
 <img src="https://opu.peklo.biz/p/25/01/02/1735796070-54418.jpg" width=400 alt="_"/><p>
