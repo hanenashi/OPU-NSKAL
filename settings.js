@@ -1,3 +1,5 @@
+const browser = chrome;
+
 document.addEventListener('DOMContentLoaded', () => {
     const cookieNameInput = document.getElementById('cookieName');
     const cookieValueInput = document.getElementById('cookieValue');
@@ -5,29 +7,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const saveButton = document.getElementById('saveButton');
     const statusDiv = document.getElementById('status');
 
+    console.log('Settings DOM loaded');
+
     // Load existing settings
-    chrome.storage.sync.get(['cookieName', 'cookieValue'], (data) => {
-        cookieNameInput.value = data.cookieName || '';
-        cookieValueInput.value = data.cookieValue || '';
-    });
+    loadSettings();
+
+    function loadSettings() {
+        browser.storage.local.get(['cookieName', 'cookieValue'], (data) => {
+            console.log('Loaded settings:', data);
+            if (data && data.cookieName) {
+                cookieNameInput.value = data.cookieName;
+                cookieValueInput.value = data.cookieValue;
+            }
+        });
+    }
 
     // Save button click event
     saveButton.addEventListener('click', () => {
+        console.log('Save button clicked');
         const name = cookieNameInput.value.trim();
         const value = cookieValueInput.value.trim();
-
+        
         if (!name || !value) {
-            alert('Both fields are required.');
+            showStatus('Both fields are required.', 'error');
             return;
         }
 
-        chrome.storage.sync.set({ cookieName: name, cookieValue: value }, () => {
-            statusDiv.textContent = 'Settings saved successfully!';
-            setTimeout(() => statusDiv.textContent = '', 2000);
+        // Save to local storage
+        const settings = { cookieName: name, cookieValue: value };
+        
+        browser.storage.local.set(settings, () => {
+            if (browser.runtime.lastError) {
+                console.error('Storage error:', browser.runtime.lastError);
+                showStatus('Failed to save settings.', 'error');
+                return;
+            }
+
+            showStatus('Settings saved successfully!', 'success');
+            // Notify uploader windows
+            browser.runtime.sendMessage({ type: 'SETTINGS_UPDATED' });
         });
     });
 
-    // Fetch Cookie button click event
+    function showStatus(message, type) {
+        statusDiv.textContent = message;
+        statusDiv.style.color = type === 'success' ? 'green' : 'red';
+        setTimeout(() => statusDiv.textContent = '', 3000);
+    }
+
+    // Fetch cookie button click event (No changes here)
     fetchCookieButton.addEventListener('click', () => {
         chrome.cookies.getAll({ domain: 'opu.peklo.biz' }, (cookies) => {
             if (chrome.runtime.lastError) {

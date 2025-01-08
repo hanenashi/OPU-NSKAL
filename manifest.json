@@ -1,17 +1,17 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "OPU NSKAL",
   "version": "1",
   "description": "Upload files and fetch gallery links from OPU",
   "permissions": [
     "storage",
-    "cookies"
-  ],
-  "host_permissions": [
+    "cookies",
+    "tabs",
+    "https://*.peklo.biz/*",
+    "https://opu.peklo.biz/",
     "https://opu.peklo.biz/*"
   ],
-  "action": {
-    "default_popup": "popup.html",
+  "browser_action": {
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
@@ -19,15 +19,17 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"],
+    "persistent": false
   },
-  "options_page": "settings.html",
+  "options_ui": {
+    "page": "settings.html",
+    "open_in_tab": true
+  },
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self';"
-  }
+  "content_security_policy": "script-src 'self'; object-src 'self';"
 }

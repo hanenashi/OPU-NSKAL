@@ -48,43 +48,46 @@
             margin-bottom: 10px;
         }
         #resizeContainer label {
-            margin-right: 10px;  /* Space between label and checkbox */
-            white-space: nowrap; /* Prevent the label from wrapping */
+            margin-right: 10px;
+            white-space: nowrap;
         }
         #resizeContainer input[type="checkbox"] {
-            margin-left: 10px;  /* Optional: Add some space after the label */
+            margin-left: 10px;
         }
         #resizePercentageContainer {
             display: none;
             margin-top: 10px;
         }
+        #hiddenFileInput {
+            display: none;
+        }
+        #selectFilesButton {
+            background-color: #2196F3;
+        }
+        #selectFilesButton:hover {
+            background-color: #1976D2;
+        }
     </style>
 </head>
 <body>
     <h3>OPU NSKAL</h3>
-
-    <label for="fileInput">Select Files:</label>
-    <input type="file" id="fileInput" multiple>
-
+    <input type="file" id="hiddenFileInput" multiple>
+    <button id="selectFilesButton">Select Files</button>
+    <div id="selectedFiles"></div>
     <label for="tagInput">Custom Tag:</label>
     <input type="text" id="tagInput" placeholder="<br>">
-
     <div id="resizeContainer">
         <label for="resizeCheckbox">
             Resize Image
         </label>
         <input type="checkbox" id="resizeCheckbox">
     </div>
-
     <div id="resizePercentageContainer">
         <label for="resizePercentage">Resize Percentage:</label>
         <input type="number" id="resizePercentage" placeholder="Enter percentage (1-100)">
     </div>
-
     <button id="uploadButton">Upload Files</button>
-
     <div id="status"></div>
-
     <script src="popup.js"></script>
 </body>
 </html>
