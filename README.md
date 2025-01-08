@@ -9,7 +9,7 @@ Nemám vůbec žádné kóderské vzdělání/praxi, všechno napsal ChatGPT v n
 
 # INSTALACE
 
-Pro Crome a Kiwi si <a href="https://www.dropbox.com/scl/fi/7fqs2as9wxqqisqhukgqt/OPU_NSKAL_Chrome_v1.0.zip?rlkey=duk478cnq9l7i6vr2u2aavpnh&st=dgqbshw0&raw=1">stáhněte tenhle .zip</a>
+Pro Chrome a Kiwi si <a href="https://www.dropbox.com/scl/fi/7fqs2as9wxqqisqhukgqt/OPU_NSKAL_Chrome_v1.0.zip?rlkey=duk478cnq9l7i6vr2u2aavpnh&st=dgqbshw0&raw=1">stáhněte tenhle .zip</a>
 <p>
 Pro Firefox si <a href="https://www.dropbox.com/scl/fi/i5wvvacika5jc7ppdvu10/OPU_NSKAL_Firefox_1.0.xpi?rlkey=w9m7vhd97g91b7gtpl483zwdo&st=nd4tvpa7&raw=1">stáhněte tenhle .xpi</a>
 
